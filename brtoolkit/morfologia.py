@@ -18,3 +18,32 @@ class Pronome():
         for tipo in self.todosPronomes:
             if _pron in tipo:
                 return(tipo[-1])
+
+class Verbo():
+
+    def __init__(self):
+        self.pronomesPessoais = ['eu', 'tu', 'ele', 'ela', 'nós','vós', 'eles', 'elas']
+        self.conjuga_ar = ['o', 'as', 'a', 'a', 'amos', 'ais', 'am', 'am']
+        self.conjuga_er = ['o', 'es', 'e', 'e', 'emos', 'eis', 'em', 'em']
+        self.conjuga_ir = ['o', 'es', 'e', 'e', 'imos', 'is', 'em', 'em']
+
+
+    def conjugar(self, verbo):
+        conjugacao = []
+        termina_em = verbo[-2:]
+
+        if termina_em == 'ar':
+            for i in range(len(self.conjuga_ar)):
+                conjugacao.append((str(self.pronomesPessoais[i]), str(verbo[:-2])+str(self.conjuga_ar[i])))
+
+        elif termina_em == 'er':
+            for i in range(len(self.conjuga_er)):
+                conjugacao.append((str(self.pronomesPessoais[i]), str(verbo[:-2])+str(self.conjuga_er[i])))
+
+        elif termina_em == 'ir':
+            for i in range(len(self.conjuga_ir)):
+                conjugacao.append((str(self.pronomesPessoais[i]), str(verbo[:-2])+str(self.conjuga_ir[i])))
+        else:
+            print('[{verbo}] Não é um verbo regular.'.format(verbo=verbo))
+
+        return conjugacao
