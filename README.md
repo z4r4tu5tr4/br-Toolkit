@@ -59,10 +59,22 @@ choice(texto.nome) #Davi
 ```python
 
 from brtoolkit.morfologia import Pronome
-from random import choice
 
 # Classificação de Pronomes
 p = Pronome()
 p.classificar("eu") # Pronome Pessoal
+
+```
+
+#### Conjugação de Verbo regular:
+
+```python
+
+from brtoolkit.morfologia import Verbo
+
+# Conjugação de verbo regular
+v = Verbo()
+v.conjugar("programar")
+# Saida: [('eu', 'programo'), ('tu', 'programas'), ('ele', 'programa'), ('ela', 'programa'), ('nós', 'programamos'), ('vós', 'programais'), ('eles', 'programam'), ('elas', 'programam')]
 
 ```
