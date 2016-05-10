@@ -9,7 +9,7 @@ Alguns exemplos de uso estão disponíveis no arquivo "exemplos.md"
 
 Há poucas formas de estudar o corpora da lingua brasileira, e este projeto é uma das tentativas de trazer este estudo para todos que querem ter acesso e que querem poder entender um pouco mais de nossa lingua.
 
-## Installation
+## Instalação
 
 Por enquanto o código deve ser instalado a partir de:
 ```
