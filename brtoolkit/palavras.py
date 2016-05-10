@@ -1,5 +1,3 @@
-# Arquivo para definição de classes morfológicas!
-
 class Pronome():
 
     def __init__(self):
