@@ -1,68 +1,28 @@
-# BR-toolkit
-Caixa de ferramentas/toolkit para processamento e análise de Português Brasileiro em Python 3
+# br-toolkit
+Ferramentas para PT-BR em python
 
+## Exemplos
 
-#### Números Cardinais:
+Alguns exemplos de uso estão disponíveis no arquivo "exemplos.md"
 
-```python
+## Motivação
 
-from numeros import Cardinais
+Há poucas formas de estudar o corpora da lingua brasileira, e este projeto é uma das tentativas de trazer este estudo para todos que querem ter acesso e que querem poder entender um pouco mais de nossa lingua.
 
-card = Cardinais()
+## Instalação
 
-assert(card.transcrever(5), 'cinco') #True
-
-# Os números cardinais são suportados até a casa dos milhões, a partir disto, todos os números não podem ser testados!
+Por enquanto o código deve ser instalado a partir de:
+```
+python setup.py install
 ```
 
+## Contribuidores
 
+Atualmente nós temos em nosso time:
+Eduardo Mendes (Mantenedor do Projeto)
+Vinicius Mesel (Core Developer)
+Renan Palmeiras (Core Developer)
 
-#### Números Ordinais:
+## Licença
 
-```python
-
-from numeros import Ordinais
-
-_ord = Ordinais()
-
-assert(_ord.transcrever(5), 'quinto') #True
-```
-
-#### Sentimentos randômicos:
-
-```python
-
-from texto import Texto
-from random import choice
-
-texto = Texto()
-
-choice(texto.emocoes) #alegria
-```
-
-#### Nomes comuns no brasil:
-
-```python
-
-from texto import Texto
-from random import choice
-
-texto = Texto()
-
-choice(texto.nome) #Eduardo
-choice(texto.nome) #Sophia
-choice(texto.nome) #Davi
-```
-
-#### Classificação de Pronomes:
-
-```python
-
-from brtoolkit.morfologia import Pronome
-from random import choice
-
-# Classificação de Pronomes
-p = Pronome()
-p.classificar("eu") # Pronome Pessoal
-
-```
+O projeto está mantido sobre a Licença GNU!
